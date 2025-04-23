@@ -1,0 +1,174 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.main-content{
+  min-height: 70vh;
+    display: flex;
+    align-content: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.btn{
+  border: 1px white;
+  border-radius: 5px white;
+  background-color: #a0a5a3;
+  color: white;
+  padding: 7px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px;
+  cursor: pointer;
+}
+
+.text-xs{
+  font-size: 16px;
+  color: #2b2c2b;
+  font-weight: 500;
+}
+.promptInput{
+  width: 100%;
+  height: 75px;
+  font-size: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.promptInput:focus{
+  outline: none;
+  border: 1px solid #f5faf5;
+}
+
+.text-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 50vw;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20vh;
+}
+
+
+.app-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 80vh;
+  height: 100%;
+  padding-top: 2em;
+  background-color: #f0f0f0;
+}
+
+.btn-text{
+  padding: 5px ;
+  margin: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+}
+
+.btn-generate{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: #4CAF50 0.3s ease;
+}
+
+.btn-generate:hover{
+  background-color: #45a049;
+}
+.btn-generate:disabled{
+  background-color: #658c77;
+  cursor: not-allowed;
+}
+
+.option-container{
+  /* margin-left: auto; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  /* align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 50vw;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 20px; */
+}
+
+
+.skeleton {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
