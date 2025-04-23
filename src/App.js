@@ -90,17 +90,17 @@ function App() {
 
         let apiEndpoint = advancedSettings.api ?? "http://162.243.222.155:8000/generate-image";
 
-        // const response = await fetch(apiEndpoint, requestOptions);
+        const response = await fetch(apiEndpoint, requestOptions);
         // .then((response) => response.text())
         // .then((result) => console.log(result))
         // .catch((error) => console.error(error));
 
-        const response = await fetch(`${apiEndpoint}/api/generate/?${params.toString()}`, {
-          method: "GET",
-          headers: {
-            "ngrok-skip-browser-warning": "true",
-          },
-        });
+        // const response = await fetch(`${apiEndpoint}/api/generate/?${params.toString()}`, {
+        //   method: "GET",
+        //   headers: {
+        //     "ngrok-skip-browser-warning": "true",
+        //   },
+        // });
         console.log(response);
         if (!response.ok) {
           throw new Error("Image fetch failed");
